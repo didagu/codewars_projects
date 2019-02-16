@@ -1,0 +1,28 @@
+{
+  "name": "codewars_projects",
+  "version": "1.0.0",
+  "description": "A collection of katas i solved on codewars.com",
+  "main": "abbrevName.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didagu/codewars_projects.git"
+  },
+  "keywords": [
+    "codewars",
+    "kata",
+    "kyu",
+    "algorithm"
+  ],
+  "author": "Dominic Idagu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didagu/codewars_projects/issues"
+  },
+  "homepage": "https://github.com/didagu/codewars_projects#readme",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}
