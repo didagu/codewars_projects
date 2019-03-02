@@ -27,11 +27,24 @@ function sumStrings(a,b){
         result[i] = 1
     }
 
-    return (result.reverse().join(''))* 1
+    return result.reverse().join('').replace(/^0+/,'')
 }
 
 function readNumberFromString(string){
     return string.split("").map(Number).reverse()
+}
+
+//Someone else solution
+function sumStrings(a, b) {
+    var res = '', c = 0;
+    a = a.split('');
+    b = b.split('');
+    while (a.length || b.length || c) {
+        c += ~~a.pop() + ~~b.pop();
+        res = c % 10 + res;
+        c = c > 9;
+    }
+    return res.replace(/^0+/, '');
 }
 
 console.log(sumStrings('123', '456'), '579')
