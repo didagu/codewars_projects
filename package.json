@@ -4,7 +4,7 @@
   "description": "A collection of katas i solved on codewars.com",
   "main": "abbrevName.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha || true"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/didagu/codewars_projects#readme",
   "dependencies": {
+  },
+  "devDependencies": {
     "chai": "^4.2.0",
-    "jest": "^24.1.0",
-    "mocha": "^6.0.1"
+    "mocha": "^6.1.4"
   }
 }
