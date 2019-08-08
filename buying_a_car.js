@@ -17,8 +17,9 @@ function nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMon
         priceNew -= priceNew * (reductionPercentage / 100)
     }
 
-    return [monthsCount, Math.floor(monthlySavings + priceOld - priceNew)]
+    return [monthsCount, Math.round(monthlySavings + priceOld - priceNew)]
 }
 
 console.log(nbMonths(2000, 8000, 1000, 1.5), [6, 766])
 console.log(nbMonths(12000, 8000, 1000, 1.5), [0, 4000])
+console.log(nbMonths(2300, 2800, 1000, 1.3), [1, 507])
